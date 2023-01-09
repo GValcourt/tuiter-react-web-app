@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by Gregory Valcourt.
 
-It is hosted at [sparkling-halva-9a16a9](https://sparkling-halva-9a16a9.netlify.app/)
+It is hosted at [sparkling-halva-9a16a9](https://sparkling-halva-9a16a9.netlify.app/).
 
 ## Available Scripts
 
