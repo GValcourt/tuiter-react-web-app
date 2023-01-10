@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) by Gregory Valcourt.
 
+JS support has been turned off in order to play with HTML.
+
 ## Available Scripts
 
 In the project directory, you can run:
