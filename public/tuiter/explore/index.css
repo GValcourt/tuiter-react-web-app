@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    margin-left: 16px;
+}
+
+/*Search bar elements*/
+.wd-search-background{
+    background-color: darkgrey;
+}
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+   }
+
+.wd-grid-col-search {
+        width: 85%;
+        float: left;
+    }
+
+/*Gear Elements*/
+.wd-loat-right-gear {
+    float: right;
+ }
+
+ .wd-grid-col-gear{
+    width: 10%;
+    float: right;
+ }
+
+ .wd-container-gear {
+    text-align: center;
+    color:blue
+  }
+
+/**/
+
