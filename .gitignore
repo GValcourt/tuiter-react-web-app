@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+#if you need fontawesome, download it
+/vendors
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
