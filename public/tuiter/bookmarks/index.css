@@ -1,0 +1,158 @@
+.wd-body{
+    background-color: black;
+    margin-left: 16px;
+}
+
+.wd-text-centered{
+    text-align: center;
+}
+
+.wd-post-padding{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.wd-grid-row{
+    clear:both;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-float-left{
+    float: left;
+}
+
+.wd-float-none{
+    float:none
+}
+
+.wd-left-padding-16px{
+    padding-left: 16px;
+}
+
+.wd-section-border{
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-content-offset{
+    margin-left: 16px;
+}
+
+.wd-color-white{
+    color: white;
+}
+
+.wd-bottom-padding-12px{
+    padding-bottom: 12px;
+}
+
+.wd-top-padding-12px{
+    padding-top: 12px;
+}
+
+.wd-top-margin-12px{
+    margin-top: 12px;
+}
+
+.wd-left-margin-12px{
+    margin-left: 12px;
+}
+
+.wd-margin-bottom-16px{
+    margin-bottom: 16px;
+}
+
+.wd-padding-bottom-8px{
+    padding-bottom: 8px;
+}
+
+/*Title elements*/
+
+.wd-page-font{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-handle-font{
+    color:lightgrey;
+    font-size: 13px;
+}
+
+.wd-title-border{
+    border-bottom: 1px solid lightgray;
+}
+
+
+/*Bookmark elements*/
+
+.wd-bookmark-image-format{
+    border-radius: 90px;
+    height: 48px;
+    width:48px;
+    margin-right: 16px;
+}
+
+.wd-text-author{
+    color: white;
+    font-size: 15px;
+}
+
+.wd-text-handle{
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-text-content{
+    color: white;
+    font-size: 15px;
+}
+
+.wd-content-image{
+    height: 256px;
+    width: 504px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.wd-content-border{
+    border: 1px solid lightgray;
+}
+
+.wd-border-bottom-rounded{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.wd-content-max-width{
+    max-width: 504px;
+}
+
+.wd-padding-content-12px{
+    padding: 12px;
+}
+
+.wd-margin-content-12px{
+    margin-right: 12px;
+}
+
+/* Bottom Buttons*/
+
+.grid-col-left-20-percent {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.wd-text-color-lightgrey{
+    color:lightgrey
+}
+
+.wd-button-link-format{
+    text-decoration: none;
+}
+
+.wd-text-color-red{
+    color:red;
+}

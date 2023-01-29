@@ -3,72 +3,76 @@
 <head>
    <meta charset="UTF-8">
    <title>Tuiter - Explore</title>
+   <link link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+   rel="stylesheet"/>
+   <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
    <link href="index.css"
          rel="stylesheet"/>
 </head>
-<body class="wd-body">
-    <!--Search bar and gear-->
-    <input class = "wd-rounded-corners-all-around-grey wd-grid-col-search wd-search-background" placeholder="Search Tuiter"/>
-    <a class="wd-container-gear wd-grid-col-gear" href="explore-settings.html">&#9881;</a> <!--&#9881 is html for gear-->
-    <!--Link Row-->
-    <div class="wd-grid-row">
-        <div class="wd-container-topic-links 
-        wd-highlighted-bottom-border wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-highlighted-color" href="./explore/for-you.html"> For you</a>
-        </div> 
-        <div class="wd-container-topic-links wd-text-topic-other-color
-        wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-other-color" href="./explore/trending.html"> Trending</a>
-        </div>
-        <div class="wd-container-topic-links wd-text-topic-other-color
-        wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-other-color" href="./explore/covid-19.html"> COVID-19</a>
-        </div>
-        <div class="wd-container-topic-links wd-text-topic-other-color
-        wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-other-color" href="./explore/news.html"> News</a>
-        </div>
-        <div class="wd-container-topic-links wd-text-topic-other-color
-        wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-other-color" href="./explore/sports.html"> Sports</a>
-        </div>
-        <div class="wd-container-topic-links wd-text-topic-other-color
-        wd-text-centered wd-link-text-size">
-        <a class="wd-text-topic-other-color" href="./explore/entertainment.html"> Entertainment</a>
-        </div>
-        <div class="wd-float-done"></div>
-    </div>
-    <hr class="wd-horizontal-line">
-    <!--Trending posts-->
-    <div class="wd-trending-topic-text-formatting wd-post-padding">Trending in Science
-        <br>
-        <div class="wd-trending-topic-formatting">Starship</div>
-        55.5k Tuits
-    </div>
-    <!-- &#x2022 is a dot -->
-    <div class="wd-trending-topic-text-formatting wd-post-padding">Trending &#x2022 Sports
-        <br>
-        <div class="wd-trending-topic-formatting">Joe Rogan</div>
-        5,218 Tuits
-    </div>
-    <!--Cuomo Article-->
-    <div class="wd-grid-row">
-        <div class="wd-suggested-text-formatting wd-post-padding wd-suggested-container-70 wd-float-left">
-            The New York Times <a class="wd-suggested-postdate">
-            &#x2022 Yesterday</a>
-            <br>
-            <a class="wd-suggested-posttitle">CNN's Cuomo conundrum:
-            A star anchor with a brother in trouble
+<body>
+    <!--Left-hand navigation-->
+    <div class="container mt-2 wd-float-left wd-navigation-size">
+        <div class="list-group">
+            <a class="list-group-item">
+                <i class="fa"> T </i>
             </a>
-        </div>
-        <img class="wd-suggested-container-20 wd-float-right wd-suggested-image-format" src="./Chris_Cuomo.jpg">
-        <div class="wd-float-done"></div>
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-home"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-home"></i> Home</div>
+            <a href="#" class="list-group-item list-group-item-action active">
+                <div class="d-block d-xl-none"><i class="fas fa-hashtag"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-hashtag"></i> Explore</div></a>
+            <a href="../notifications.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-bell"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bell"></i> Notifications</div></a>
+            <a href="../messages.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-envelope"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-envelope"></i> Messages</div></a>
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-bookmark"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bookmark"></i> Bookmarks</div></a>
+            <a href="../list.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-list"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-list"></i> Lists</div></a>
+            <a href="../profile.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><i class="fas fa-user"></i></div>
+                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-user"></i> Profile</div></a>
+            <a href="../more.html" class="list-group-item list-group-item-action">
+                <div class="d-block d-xl-none"><span class="wd-fa-stack fa-xs">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
+                    </span></div>
+                    <div class="d-none d-xl-block d-xxl-block"><span class="wd-fa-stack fa-xs">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
+                    </span> More</div>
+                </a>
+          </div>
+          <button class="btn btn-primary container mt-1 wd-border-radius-50"> Tweet</button>
     </div>
-    <!--COVID-19 Live-->
+
+    <!--Top of Main content-->
+    <div class="container">
+        <!--Search Bar-->
+        <div class="container mt-2 wd-float-left wd-border-radius-50" style="border-width: 1px; border-width: 1px; border-style: solid;">
+            <div class="md-form mt-0">
+                <i class="fas fa-search"></i>
+                <input class="form-control" type="text" placeholder="Search" style="border-width:0px">
+            </div>
+        </div>
+        <a class="container" href="explore-settings.html">
+            <i class="fas fa-cog fa-2x" style="color: rgb(red, green, blue);"></i>
+        </a>
+    </div>
+    <br>
+    <h2>Grid size</h2>
+    <div class="d-block d-sm-none fa-2x">XS</div>
+         <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+         <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+         <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+         <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+         <div class="d-none d-xxl-block fa-2x">XXL</div>
 
 
-
-
-</form>
 
 </body>
