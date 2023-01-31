@@ -10,68 +10,215 @@
          rel="stylesheet"/>
 </head>
 <body>
-    <!--Left-hand navigation-->
-    <div class="container mt-2 wd-float-left wd-navigation-size">
-        <div class="list-group">
-            <a class="list-group-item">
-                <i class="fa"> T </i>
-            </a>
-            <a href="../home.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-home"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-home"></i> Home</div>
-            <a href="#" class="list-group-item list-group-item-action active">
-                <div class="d-block d-xl-none"><i class="fas fa-hashtag"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-hashtag"></i> Explore</div></a>
-            <a href="../notifications.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-bell"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bell"></i> Notifications</div></a>
-            <a href="../messages.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-envelope"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-envelope"></i> Messages</div></a>
-            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-bookmark"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bookmark"></i> Bookmarks</div></a>
-            <a href="../list.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-list"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-list"></i> Lists</div></a>
-            <a href="../profile.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><i class="fas fa-user"></i></div>
-                <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-user"></i> Profile</div></a>
-            <a href="../more.html" class="list-group-item list-group-item-action">
-                <div class="d-block d-xl-none"><span class="wd-fa-stack fa-xs">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
-                    </span></div>
-                    <div class="d-none d-xl-block d-xxl-block"><span class="wd-fa-stack fa-xs">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
-                    </span> More</div>
+    <div class="container" id="main-page-organization">
+        <!--Left-hand navigation-->
+        <div class="container wd-float-left wd-navigation-size">
+            <div class="list-group">
+                <a class="list-group-item">
+                    <i class="fa"> T </i>
                 </a>
-          </div>
-          <button class="btn btn-primary container mt-1 wd-border-radius-50"> Tweet</button>
-    </div>
-
-    <!--Top of Main content-->
-    <div class="container">
-        <!--Search Bar-->
-        <div class="container mt-2 wd-float-left wd-border-radius-50" style="border-width: 1px; border-width: 1px; border-style: solid;">
-            <div class="md-form mt-0">
-                <i class="fas fa-search"></i>
-                <input class="form-control" type="text" placeholder="Search" style="border-width:0px">
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-home"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-home"></i> Home</div>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <div class="d-block d-xl-none"><i class="fas fa-hashtag"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-hashtag"></i> Explore</div></a>
+                <a href="../notifications.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-bell"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bell"></i> Notifications</div></a>
+                <a href="../messages.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-envelope"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-envelope"></i> Messages</div></a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-bookmark"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-bookmark"></i> Bookmarks</div></a>
+                <a href="../list.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-list"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-list"></i> Lists</div></a>
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><i class="fas fa-user"></i></div>
+                    <div class="d-none d-xl-block d-xxl-block"><i class="fas fa-user"></i> Profile</div></a>
+                <a href="../more.html" class="list-group-item list-group-item-action">
+                    <div class="d-block d-xl-none"><span class="wd-fa-stack fa-xs">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
+                        </span></div>
+                        <div class="d-none d-xl-block d-xxl-block"><span class="wd-fa-stack fa-xs">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x" style="color: white;"></i>
+                        </span> More</div>
+                    </a>
+              </div>
+              <button class="btn btn-primary container mt-1 wd-border-radius-50"> Tuit</button>
+        </div>
+    
+        <!--Right side suggested-->
+        <div class="container wd-float-right wd-suggested-size d-none d-lg-block d-xl-block d-xxl-block ms-3 me-3"
+        style="max-width:350px">
+            <div class="row">
+                <div class="col wd-border-1px-solid pt-1 pb-1">
+                   <b>Who to follow</b></div>
+                </div>
+            <div class="row">
+                <div class="col wd-border-1px-solid">
+                   <img src="../../images/java.jpg" alt="Java Logo" class="wd-avatar-image wd-float-left">
+                   <div class="container wd-float-left wd-handle-box-length">
+                    <b>Java</b> <i class="fas fa-check-circle"></i>
+                    <br>
+                    @Java
+                </div>
+                    <button class="btn btn-primary mt-1 mb-1 wd-border-radius-50 wd-float-right"> Follow</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col wd-border-1px-solid">
+                    <img src="../../images/relativityspace.jpg" alt="RelativitySpace logo" class="wd-avatar-image wd-float-left">
+                    <div class="container wd-float-left wd-handle-box-length">
+                        <b>Relativity Space</b> <i class="fas fa-check-circle"></i>
+                        <br>
+                        @relativityspace
+                    </div>
+                   <button class="btn btn-primary mt-1 mb-1 wd-border-radius-50 wd-float-right"> Follow</button>
+                </div>
+                   
+            </div>
+            <div class="row">
+                <div class="col wd-border-1px-solid">
+                    <img src="../../images/Virgin_logo.png" alt="Virgin logo" class="wd-avatar-image wd-float-left">
+                    <div class="container wd-float-left wd-handle-box-length">
+                        <b>Virgin Galactic</b> <i class="fas fa-check-circle"></i>
+                        <br>
+                        @virgingalactic
+                    </div>
+                   <button class="btn btn-primary mt-1 mb-1 wd-border-radius-50 wd-float-right"> Follow</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col wd-border-1px-solid">
+                    <img src="../../images/nasa.jpg" alt="NASA logo" class="wd-avatar-image wd-float-left">
+                    <div class="container wd-float-left wd-handle-box-length">
+                        <b>Nasa</b> <i class="fas fa-check-circle"></i>
+                        <br>
+                        @NASA
+                    </div>
+                   <button class="btn btn-primary mt-1 mb-1 wd-border-radius-50 wd-float-right"> Follow</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col wd-border-1px-solid">
+                    <img src="../../images/tesla.png" alt="Tesla logo" class="wd-avatar-image wd-float-left">
+                    <div class="container wd-float-left wd-handle-box-length">
+                        <b>Telsa</b> <i class="fas fa-check-circle"></i>
+                        <br>
+                        @Tesla
+                    </div>
+                   <button class="btn btn-primary mt-1 mb-1 wd-border-radius-50 wd-float-right"> Follow</button>
+                </div>
             </div>
         </div>
-        <a class="container" href="explore-settings.html">
-            <i class="fas fa-cog fa-2x" style="color: rgb(red, green, blue);"></i>
-        </a>
+    
+        <!--Top of Main content-->
+        <div class="container g-0">
+            <!--Search Bar-->    
+            <div class="row mt-2" id="search-bar">
+                <div class="col-3 wd-border-radius-50 wd-search wd-border-1px-solid wd-no-text-wrap">
+                    <div class="wd-search internal">
+                        <i class="fas fa-search"></i>
+                        <input class="form-control" type="text" placeholder="Search" style="border-width:0px">
+                    </div>
+                </div>
+                <a class="col" href="explore-settings.html">
+                    <i class="fas fa-cog fa-2x" style="color: rgb(red, green, blue);"></i>
+                </a>
+            </div>
+            <div class="row mt-2">
+                <ul class="nav nav-tabs flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link active wd-no-text-wrap" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-no-text-wrap" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-no-text-wrap" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wd-no-text-wrap" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-none d-md-block wd-no-text-wrap">
+                        <a class="nav-link" href="Entertainment">Entertainment</a>
+                    </li>
+                 </ul>
+            </div>
+
+            <!--Central Content-->
+            <div class="row mt-2 g-0">
+                <!--Space-X Starship-->
+                <div class="wd-border-1px-solid" id="main-image">
+                        <img src="../../images/starship_center.jpg" alt="SpaceX's Starship" class="wd-center-image"/>
+                    <div class="wd-image-text">
+                        <h2>SpaceX's Starship</h2>
+                    </div>
+                </div>
+                <div class="wd-border-1px-solid" >
+                    <div class="container wd-float-left no-flex p-2" style="max-width:70%">
+                        <span class="wd-flavor-text">Web Development</span>
+                        <br>
+                        <b>ReactJS </b><i class="fas fa-check-circle"></i><span class="wd-flavor-text"> - 2h</span>
+                        <br>
+                        <b>React.js is a component based front end library that makes it very easy to
+                            build Single Page Applications or SPAs
+                        </b>
+                    </div>
+                    <img src="../../images/react.jpg" alt="React logo" class="wd-article-image wd-float-right m-3">
+                </div>
+                <div class="wd-border-1px-solid">
+                    <div class="container wd-float-left no-flex p-2" style="max-width:70%">
+                        <b>JavaScript </b><i class="fas fa-check-circle"></i><span class="wd-flavor-text"> - 2h</span>
+                        <br>
+                        <b>JavaScript is a programming language that can run on browsers as well as desktops
+                        </b>
+                        <br>
+                        <span class="wd-flavor-text">123K Tuits</span>
+                    </div>
+                    <img src="../../images/JavaScript_Logo.png" alt="JavaScript" class="wd-article-image wd-float-right m-3">
+                </div>
+                <div class="wd-border-1px-solid">
+                    <div class="container wd-float-left no-flex p-2" style="max-width:70%">
+                        <span class="wd-flavor-text">Web Development</span>
+                        <br>
+                        <b>jQuery </b>
+                        <br>
+                        <span class="wd-flavor-text">123K Tuits</span>
+                    </div>
+                    <img src="../../images/jQuery.gif" alt="jQuery" class="wd-article-image wd-float-right m-3">
+                </div>
+                <div class="wd-border-1px-solid">
+                    <div class="container wd-float-left no-flex p-2" style="max-width:70%">
+                        <span class="wd-flavor-text">Web Development</span>
+                        <br>
+                        <b>NodeJS </b><i class="fas fa-check-circle"></i><span class="wd-flavor-text"> - 2h</span>
+                        <br>
+                        <span class="wd-flavor-text">123K Tuits</span>
+                    </div>
+                    <img src="../../images/node-js.png" alt="Node JS" class="wd-article-image wd-float-right m-3">
+                </div>
+
+            <!--div class="row">
+                Grid size
+                <div class="d-block d-sm-none fa-2x">XS</div>
+                     <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+                     <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+                     <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+                     <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+                     <div class="d-none d-xxl-block fa-2x">XXL</div>
+                </div>
+            
+            <#End center container>
+            <#Leaving this if debug is required>
+            </div-->
+
     </div>
-    <br>
-    <h2>Grid size</h2>
-    <div class="d-block d-sm-none fa-2x">XS</div>
-         <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-         <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-         <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-         <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-         <div class="d-none d-xxl-block fa-2x">XXL</div>
 
 
 
