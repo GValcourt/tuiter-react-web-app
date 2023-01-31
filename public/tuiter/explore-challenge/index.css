@@ -1,0 +1,139 @@
+.wd-float-done {
+    clear: both;
+}
+.wd-float-left{
+    float:left;
+}
+.wd-float-right{
+    float:right;
+}
+
+.wd-fa-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+.wd-border-radius-50{
+    border-radius:50px
+}
+
+.wd-border-radius-10{
+    border-radius:10px
+}
+
+.wd-avatar-image{
+    border-radius: 90px;
+    height: 48px;
+    width:48px;
+}
+
+@media (min-width: 0px)
+   and (max-width: 1200px) {
+    .wd-navigation-size{
+        max-width: 5.5em;
+    }
+}
+@media (min-width: 1200px){
+    .wd-navigation-size{
+    max-width: 12em;
+    }
+}
+
+.wd-suggested-size{
+    max-width: 12em;
+}
+
+.wd-handle-box-length{
+    max-width:200px;
+}
+
+.wd-no-text-wrap{
+    white-space: nowrap;
+}
+
+.wd-content {
+    max-width: 80%;
+    margin: auto;
+  }
+
+.wd-border-1px-solid{
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wd-search{
+    width:85%;
+    display:flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.wd-search.internal{
+    width:99%;
+    display:flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.wd-center-image { 
+    width: 100%; /* for IE 6 */
+    height: 100%;
+}
+
+.wd-image-text{
+    position: relative; 
+    top: -65px; 
+    left: 10px; 
+    width: 100%;
+    color: white; 
+}
+
+.wd-article-image{
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.wd-flavor-text{
+    color:grey;
+}
+
+.wd-border-color-grey{
+    border-color:grey;
+}
+
+.wd-active-link{
+    border-bottom: 4px;
+    border-radius: 4px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-color: rgb(69, 168, 248);
+}
+
+.wd-trending-link-color{
+    color: rgb(69, 168, 248);
+    text-decoration: none;
+}
+
+.wd-tuiter-color{
+    color: rgb(69, 168, 248);
+}
+
+.wd-tuiter-color-background{
+    background-color: rgb(69, 168, 248);
+}
+
+
+
+.wd-background-lightgrey{
+    background-color: lightgray;
+}
+
+
+.wd-no-border{
+    border: 0px;
+}
