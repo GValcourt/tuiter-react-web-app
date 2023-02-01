@@ -25,6 +25,10 @@
     border-radius:10px
 }
 
+.wd-padding-right-none{
+    padding-right: 0px;
+}
+
 .wd-avatar-image{
     border-radius: 90px;
     height: 48px;
@@ -120,19 +124,41 @@
 }
 
 .wd-tuiter-color{
-    color: rgb(69, 168, 248);
+    color: rgb(19, 97, 185);
 }
 
 .wd-tuiter-color-background{
     background-color: rgb(69, 168, 248);
 }
 
-
-
 .wd-background-lightgrey{
     background-color: lightgray;
 }
 
+
+.wd-max-width{
+    max-width: 400px;
+}
+
+.wd-max-width-90percent{
+    max-width:90%
+}
+
+.wd-central-content-margin{
+    margin:-.3em;
+}
+
+.wd-text-black{
+    color:black;
+}
+
+.wd-text-gold{
+    color:gold;
+}
+
+.wd-font-size-small{
+    font-size: small;
+}
 
 .wd-no-border{
     border: 0px;

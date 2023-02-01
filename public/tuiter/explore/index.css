@@ -92,6 +92,22 @@
     width: 80px;
 }
 
+.wd-text-color-white{
+    color: white;
+}
+
+.wd-max-width-350px{
+    max-width:350px
+}
+
+.wd-max-width-70percent{
+    max-width:70%
+}
+
+.wd-border-width-none{
+    border-width:0px
+}
+
 .wd-flavor-text{
     color:grey;
 }
