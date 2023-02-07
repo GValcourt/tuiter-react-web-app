@@ -19,7 +19,7 @@
 .env.production.local
 
 #if you need fontawesome, download it
-/public/vendors
+/public/vendors/fontawesome
 
 npm-debug.log*
 yarn-debug.log*

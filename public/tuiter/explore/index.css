@@ -1,60 +1,16 @@
-.wd-float-done {
-    clear: both;
-}
-.wd-float-left{
-    float:left;
-}
-.wd-float-right{
-    float:right;
-}
-
-.wd-fa-stack {
-    display: inline-block;
-    height: 2em;
-    line-height: 2em;
-    position: relative;
-    vertical-align: middle;
-    width: 2.5em;
-}
-
-.wd-border-radius-50{
-    border-radius:50px
-}
-
 .wd-avatar-image{
     border-radius: 90px;
     height: 48px;
     width:48px;
 }
 
-@media (min-width: 0px)
-   and (max-width: 1200px) {
-    .wd-navigation-size{
-        max-width: 5.5em;
-    }
-}
-@media (min-width: 1200px){
-    .wd-navigation-size{
-    max-width: 12em;
-    }
+.wd-border-radius-50{
+    border-radius:50px
 }
 
-.wd-suggested-size{
-    max-width: 12em;
+.wd-max-width-350px{
+    max-width:350px
 }
-
-.wd-handle-box-length{
-    max-width:200px;
-}
-
-.wd-no-text-wrap{
-    white-space: nowrap;
-}
-
-.wd-content {
-    max-width: 80%;
-    margin: auto;
-  }
 
 .wd-border-1px-solid{
     border-width: 1px;
@@ -62,7 +18,7 @@
 }
 
 .wd-search{
-    width:85%;
+    width:77%;
     display:flex;
     align-items: center;  
 }
@@ -73,17 +29,26 @@
     align-items: center;  
 }
 
-.wd-center-image { 
-    width: 100%; /* for IE 6 */
-    height: 100%;
+.wd-no-bullet-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .wd-image-text{
-    position: relative; 
-    top: -42px; 
-    left: 5px; 
+    position: relative;
+    bottom: 5rem;
+    margin:1rem;
     width: 100%;
-    color: white; 
+    color: white;
+}
+
+.wd-background-grey{
+    background-color: rgb(42, 42, 42);
+}
+
+.wd-text-color-white{
+    color: white;
 }
 
 .wd-article-image{
@@ -92,22 +57,15 @@
     width: 80px;
 }
 
-.wd-text-color-white{
-    color: white;
-}
-
-.wd-max-width-350px{
-    max-width:350px
-}
-
-.wd-max-width-70percent{
-    max-width:70%
-}
-
-.wd-border-width-none{
-    border-width:0px
-}
-
 .wd-flavor-text{
     color:grey;
+    font-size:small;
+}
+
+.wd-no-text-wrap{
+    white-space: nowrap;
+}
+
+.wd-margin-fix-image{
+    margin-bottom:-2rem
 }

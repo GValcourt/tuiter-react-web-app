@@ -1,0 +1,44 @@
+.wd-no-bullet-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-background-grey{
+    background-color: rgb(42, 42, 42);
+}
+
+.wd-text-color-white{
+    color: white;
+}
+
+.wd-article-image{
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.wd-flavor-text{
+    color:grey;
+    font-size:small;
+}
+
+.wd-avatar-image{
+    border-radius: 90px;
+    height: 48px;
+    width:48px;
+}
+
+.wd-no-bullet-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-background-grey{
+    background-color: rgb(42, 42, 42);
+}
+
+.wd-text-color-white{
+    color: white;
+}
