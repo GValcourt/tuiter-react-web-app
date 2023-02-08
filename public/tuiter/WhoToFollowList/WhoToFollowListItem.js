@@ -5,17 +5,18 @@ const WhoToFollowListItem = (who) => {
     //handle
 
     return(`
-    <div class="row justify-content-center wd-background-grey p-0">
-        <div class="col-2">
+    <div class="row justify-content-center p-0">
+        <div class="ms-3 p-2" style="width: fit-content">
             <img src="../../images/${who.avatarIcon}" alt="" class="wd-avatar-image float-left">
         </div>
-        <div class="col text-left justify-content-center my-2 ms-2 me-0 pe-0">
+        <div class="col text-left justify-content-center my-2 ms-0 me-0 px-0">
             <b>${who.userName}</b> <i class="fas fa-check-circle"></i>
             <br>
             @${who.handle}
         </div>
-        <div class="col-3 float-right my-3 ms-1 me-1 p-0 text-center">
+        <div class="float-right ps-0 py-3 pe-3" style="width: fit-content">
             <button class="btn btn-primary btn-block rounded-pill"> Follow</button>
+            
         </div>
     </div>
         `);

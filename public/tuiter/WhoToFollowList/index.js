@@ -6,9 +6,9 @@ const WhoToFollowList = () => {
                 lineitems.push(`<li>${WhoToFollowListItem(who[i])}</li>`)
         }
    return (`
-        <div class="wd-background-grey list-group-line-item p-1">
+        <div class="wd-background-grey list-group-line-item">
            <ul class="wd-no-bullet-list wd-text-color-white wd-no-text-wrap">
-                <li class="row justify-content-center px-0 mx-0"><b>Who to Follow</b></li>
+                <li class="row justify-content-center px-0 mx-0 mb-2 mt-2 pt-1"><b>Who to Follow</b></li>
                 ${lineitems.join("")}
            </ul>
         </div>
