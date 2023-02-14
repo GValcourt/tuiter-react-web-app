@@ -1,26 +1,32 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const NavigationSidebar = (
- {
-   active = 'explore'
- }
-) => {
+const NavigationSidebar = () => {
+  const {pathname} = useLocation();
+  const paths = pathname.split('/')
+  const active = paths[2];
 return (
    <div className="list-group">
      <a className="list-group-item">
       <div class="d-block d-xl-none"><i className="bi bi-fonts"></i></div>
         <div class="d-none d-xl-block d-xxl-block"><i className="bi bi-fonts"></i> Tuiter</div> </a>
-     <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+     <Link to="/tuiter/home" className={`list-group-item
+                    ${active === ''?'active':''}`}>
         <div class="d-block d-xl-none"><i className="bi bi-house-fill"></i></div>
         <div class="d-none d-xl-block d-xxl-block"><i className="bi bi-house-fill"></i> Home</div>
-     </a>
-     <a className={`list-group-item
+     </Link>
+     <Link to="/tuiter/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
         <div class="d-block d-xl-none"><i className="bi bi-hash"></i></div>
         <div class="d-none d-xl-block d-xxl-block"><i className="bi bi-hash"></i> Explore</div>
-     </a>
+     </Link>
+     <Link to="/" className={`list-group-item
+                    ${active === 'labs'?'active':''}`}>
+        <div class="d-block d-xl-none"><i class="bi bi-wrench"></i></div>
+        <div class="d-none d-xl-block d-xxl-block"><i class="bi bi-wrench"></i> Labs</div>
+     </Link>
      <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
         <div class="d-block d-xl-none"><i className="bi bi-bell-fill"></i></div>
