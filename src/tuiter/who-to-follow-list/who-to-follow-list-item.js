@@ -3,12 +3,12 @@ const WhoToFollowListItem = (
  {
    who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.jpg' }
  }
-) => {
+) => { /* root dir is the public folder*/
  return(
   <li className="list-group-item">
    <div className="row">
      <div className="col-2">
-       <img className="rounded-circle" height={48} src={`../../../public/images/${who.avatarIcon}`}/>
+       <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt={who.handle}/> 
      </div>
      <div className="col-8">
        <div className="fw-bold">{who.userName}</div>
