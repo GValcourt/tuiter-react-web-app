@@ -1,0 +1,29 @@
+[{
+     "id" : 0,
+     "userName": "SpaceX",
+     "handle": "SpaceX",
+     "avatarIcon": "spacex.jpg",
+     "time": "2h",
+     "text": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+     "image": "starship_center.jpg",
+     "comments":"4.2K",
+     "retuits":"3.5K",
+     "saves":"37.5K",
+     "retuit":true,
+     "retuitUsername":"Elon Musk",
+     "retuitId": -1
+   },
+   {
+     "id" : 2,
+     "userName": "New York Post",
+     "handle": "nypost",
+     "time": "23h",
+     "avatarIcon": "react.jpg",
+     "text": "Grimes seen reading Karl Marx following split with world's richest man Elon Musk",
+     "image": "grimes-marx.webp",
+     "comments":"4.2K",
+     "retuits":"3.5K",
+     "saves":"37.5K",
+     "retuit":false
+   }
+   ]
