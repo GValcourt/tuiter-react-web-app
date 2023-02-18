@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+//import "./index.css";
 
 const PostItem = (
  {
@@ -20,9 +21,6 @@ const PostItem = (
    }
  }
 ) => {
-  const fullwidth = {'width':'100%'} //TODO make CSS
-  const px48width = {'max_width':'48px'}
-
   const retuitFormat = () =>{
     return(
       ` ${post.retuitUsername} Retuited`
@@ -32,19 +30,19 @@ const PostItem = (
  return(
   <li className="list-group-item border">
    <div className="row">
-   <div className="col-2 text-center" style={px48width}>
+   <div className="col-2 text-center wd-width-48px">
       {post.retuit ? <div className="ms-4"><i class="bi bi-megaphone"></i></div>: ''}
       <img className="rounded-circle" height={48} width={48} src={`/images/${post.avatarIcon}`} alt={post.handle}/> 
     </div>
     <div className="col-10 ps-0">
-    <div className="fw-bold" style={{'font-size':'.7rem'}}>{post.retuit ? retuitFormat() : ''}</div>
+    <div className="fw-bold wd-text-point7rem">{post.retuit ? retuitFormat() : ''}</div>
       <div><b className="fw-bolder">{post.userName} </b>
         <i className="bi bi-check-circle-fill text-primary"></i> <b className="fw-light"> @{post.handle} &#x2022; {post.time}</b>
         <div className="float-end"><i className="bi bi-three-dots"></i></div>
       </div>
       
       <div>{post.text}</div>
-      <img className="float-center rounded-3 mt-2" style={fullwidth} src={`/images/${post.image}`}/>
+      <img className="float-center rounded-3 mt-2 wd-full-width" src={`/images/${post.image}`}/>
       <div className="row my-2 p-1 text-nowrap">
         <div className="col">
           <p>

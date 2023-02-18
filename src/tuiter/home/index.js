@@ -1,6 +1,7 @@
 import React from "react";
 import PostList from "./post-list";
-//import "./index.css";
+import "./index.css";
+
 const HomeComponent = () => {
  return(
    <>
