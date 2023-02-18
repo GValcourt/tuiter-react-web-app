@@ -30,8 +30,8 @@ const PostItem = (
  return(
   <li className="list-group-item border">
    <div className="row">
-   <div className="col-2 text-center wd-width-48px">
-      {post.retuit ? <div className="ms-4"><i class="bi bi-megaphone"></i></div>: ''}
+   <div className="col-2 text-center wd-width-48px p-0 m-2">
+      {post.retuit ? <div className="ms-4 fw-bold wd-text-point7rem"><i class="bi bi-megaphone"></i></div>: ''}
       <img className="rounded-circle" height={48} width={48} src={`/images/${post.avatarIcon}`} alt={post.handle}/> 
     </div>
     <div className="col-10 ps-0">
