@@ -1,10 +1,12 @@
 import React from "react";
-import PostList from "./post-list";
+import TuitList from "../tuits/tuits-list";
+import WhatsHappening from "./whats-happening";
 import "./index.css";
 
 const HomeComponent = () => {
  return(
    <>
+   <h4>Home</h4>
      <div className="row">
        <div className="col-11 position-relative">
          <input placeholder="Search Tuiter"
@@ -28,7 +30,8 @@ const HomeComponent = () => {
          <a className="nav-link">News</a>
        </li>
      </ul>
-     <PostList/>
+     <WhatsHappening/>
+     <TuitList/>
    </>
  );
 };

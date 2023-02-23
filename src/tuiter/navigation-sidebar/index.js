@@ -13,7 +13,7 @@ return (
       <div className="d-block d-xl-none"><i className="bi bi-fonts"></i></div>
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-fonts"></i> Tuiter</div> </a>
      <Link to="/tuiter/home" className={`list-group-item
-                    ${(active === '' || active === 'home')?'active':''}`}>
+                    ${(active === undefined || active === 'home')?'active':''}`}>
         <div className="d-block d-xl-none"><i className="bi bi-house-fill"></i></div>
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-house-fill"></i> Home</div>
      </Link>
