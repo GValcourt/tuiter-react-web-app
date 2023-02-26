@@ -47,11 +47,11 @@ return (
        <div className="d-block d-xl-none"><i className="bi bi-list-ul"></i></div>
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-list-ul"></i> Lists</div>
      </a>
-     <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+     <Link to="/tuiter/profile" className={`list-group-item
+                    ${active === 'labs'?'active':''}`}>
         <div className="d-block d-xl-none"><i className="bi bi-person-fill"></i></div>
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-person-fill"></i> Profile</div>
-     </a>
+     </Link>
      <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
         <div className="d-block d-xl-none"><i className="bi bi-three-dots"></i></div>
