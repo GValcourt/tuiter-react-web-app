@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {useSelector, useDispatch}
   from "react-redux";
 
@@ -8,16 +9,16 @@ function EditProfileComponent() {
     const profile = useSelector(state => state.profile);
     const dispatch = useDispatch();
     const setProfile = (newProfile) => {
-        console.log(profile)
         dispatch({
           type: 'UPDATE_PROFILE',
           profile: newProfile
         })
+        console.log(newProfile)
     };
   return(<>
     <div className="row">
         <div className="col-1 text-center">
-            <button>X</button>
+        <Link to="/tuiter/profile"><button type="reset" form="profile_form">X</button></Link>
         </div>
         <div className="col-4">
             <h4>Edit Profile</h4>
@@ -25,7 +26,18 @@ function EditProfileComponent() {
         <div className="col-3">
         </div>
         <div className="col-4 float-right text-center">
-            <button>Save</button>
+          <Link to="/tuiter/profile">
+            <button form="profile_id" onClick={
+              (e) => 
+              setProfile({...profile,
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                bio: document.getElementById('bio').value,
+                location: document.getElementById('location').value,
+                website: document.getElementById('website').value,
+                dateOfBirth: document.getElementById('dateOfBirth').value})
+            }>Save</button>
+            </Link>
         </div>
     </div>
     <div className="row">
@@ -37,40 +49,28 @@ function EditProfileComponent() {
         </div>
 
     </div>
-    <ul className="list-group">
+    <form className="list-group" id="profile_form">
         <li className="list-group-item">
-            First Name: <input onChange={(e) => 
-          setProfile({...profile,
-            firstName: e.target.value})}
+            First Name: <input id="firstName"
             defaultValue={profile.firstName}/></li>
         <li className="list-group-item">
-            Last Name: <input onChange={(e) => 
-          setProfile({...profile,
-            lastName: e.target.value})}
+            Last Name: <input id="lastName"
             defaultValue={profile.lastName}/></li>
         <li className="list-group-item">
-            Bio: <textarea onChange={(e) => 
-          setProfile({...profile,
-            password: e.target.value})}
+            Bio: <textarea id="bio"
           defaultValue={profile.bio}
           cols={50} rows={5}
           readOnly={false}/></li>
         <li className="list-group-item">
-            Location: <input onChange={(e) =>
-          setProfile({...profile,
-            first: e.target.value})}
+            Location: <input id="location"
             defaultValue={profile.location}/></li>
         <li className="list-group-item">
-            Website: <input onChange={(e) => 
-          setProfile({...profile,
-            last: e.target.value})}
+            Website: <input id="website"
             defaultValue={profile.website}/></li>
         <li className="list-group-item">
-            Date of Birth: <input onChange={(e) => 
-          setProfile({...profile,
-            last: e.target.value})}
+            Date of Birth: <input id="dateOfBirth"
             defaultValue={profile.dateOfBirth}/></li>
-      </ul>
+      </form>
     </>
   );
 };

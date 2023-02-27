@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {useSelector}
   from "react-redux";
 
@@ -18,7 +19,7 @@ function ProfileComponent() {
       <div className="col-4">
       </div>
       <div className="col-4 float-right text-center">
-        <button>Edit Profile</button>
+      <Link to="/tuiter/edit-profile"><button> Edit Profile</button></Link>
       </div>
     </div>
     <div className="row">
