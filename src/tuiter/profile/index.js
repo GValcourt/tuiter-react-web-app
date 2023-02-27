@@ -1,10 +1,9 @@
 import React from "react";
-import {useDispatch, useSelector}
+import {useSelector}
   from "react-redux";
 
 function ProfileComponent() {
-    console.log(useSelector(
-        state => state.profile))
+    //console.log(useSelector(state => state.profile))
   const profile = useSelector(
     state => state.profile);
   return(<>
