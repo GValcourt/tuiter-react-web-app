@@ -19,7 +19,7 @@ function EditProfileComponent() {
   return(<>
     <div className="row">
         <div className="col-1 text-center">
-        <Link to="/tuiter/profile"><button type="reset" form="profile_form">X</button></Link>
+        <Link to="/tuiter/profile"><button className="border-0 bg-white" type="reset" form="profile_form">X</button></Link>
         </div>
         <div className="col-4">
             <h4>Edit Profile</h4>
@@ -28,8 +28,8 @@ function EditProfileComponent() {
         </div>
         <div className="col-4 float-right text-center">
           <Link to="/tuiter/profile">
-            <button form="profile_id" onClick={
-              (e) => 
+            <button className="rounded-pill border-1 bg-black border-white text-white"
+              form="profile_id" onClick={(e) => 
               setProfile({...profile,
                 firstName: document.getElementById('name').value.split(" ")[0],
                 lastName: document.getElementById('name').value.split(" ")[1],
@@ -45,7 +45,7 @@ function EditProfileComponent() {
         <img src={`/images/${profile.bannerPicture}`} height={300}/>
     </div>
     <div className="row float-left">
-        <div className="col-6">
+        <div className="col-6  ps-4" >
             <img id={"profile_picture"} className="rounded-circle" width={140} height={140} src={`/images/${profile.profilePicture}`} />
         </div>
 

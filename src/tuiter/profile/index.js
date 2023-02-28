@@ -14,7 +14,7 @@ function ProfileComponent() {
       <img src={`/images/${profile.bannerPicture}`} height={300}/>
     </div>
     <div className="row align-items-center position-relative wd-position-up-60px">
-      <div className="col-4">
+      <div className="col-4  ps-4">
         <img id={"profile_picture"} className="rounded-circle " width={140} height={140} src={`/images/${profile.profilePicture}`} />
       </div>
       <div className="col-4">
