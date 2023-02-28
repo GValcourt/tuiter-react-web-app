@@ -13,7 +13,8 @@ function EditProfileComponent() {
           type: 'UPDATE_PROFILE',
           profile: newProfile
         })
-        console.log(newProfile)
+        //console.log(newProfile)
+        //console.log(document.getElementById('name').value.split().type)
     };
   return(<>
     <div className="row">
@@ -30,8 +31,8 @@ function EditProfileComponent() {
             <button form="profile_id" onClick={
               (e) => 
               setProfile({...profile,
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
+                firstName: document.getElementById('name').value.split(" ")[0],
+                lastName: document.getElementById('name').value.split(" ")[1],
                 bio: document.getElementById('bio').value,
                 location: document.getElementById('location').value,
                 website: document.getElementById('website').value,
@@ -41,21 +42,18 @@ function EditProfileComponent() {
         </div>
     </div>
     <div className="row">
-      <img src={`/images/${profile.bannerPicture}`} height={300}/>
+        <img src={`/images/${profile.bannerPicture}`} height={300}/>
     </div>
     <div className="row float-left">
         <div className="col-6">
-            <img className="rounded-circle" width={"100%"} src={`/images/${profile.profilePicture}`} />
+            <img id={"profile_picture"} className="rounded-circle" width={140} height={140} src={`/images/${profile.profilePicture}`} />
         </div>
 
     </div>
-    <form className="list-group" id="profile_form">
+    <form className="list-group text-start" id="profile_form">
         <li className="list-group-item">
-            First Name: <input id="firstName"
-            defaultValue={profile.firstName}/></li>
-        <li className="list-group-item">
-            Last Name: <input id="lastName"
-            defaultValue={profile.lastName}/></li>
+            Name <input id="name"
+            defaultValue={`${profile.firstName} ${profile.lastName}`}/></li>
         <li className="list-group-item">
             Bio: <textarea id="bio"
           defaultValue={profile.bio}

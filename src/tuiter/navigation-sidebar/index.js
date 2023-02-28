@@ -48,7 +48,7 @@ return (
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-list-ul"></i> Lists</div>
      </a>
      <Link to="/tuiter/profile" className={`list-group-item
-                    ${active === 'labs'?'active':''}`}>
+                    ${(active === 'profile' || active === 'edit-profile')?'active':''}`}>
         <div className="d-block d-xl-none"><i className="bi bi-person-fill"></i></div>
         <div className="d-none d-xl-block d-xxl-block"><i className="bi bi-person-fill"></i> Profile</div>
      </Link>
