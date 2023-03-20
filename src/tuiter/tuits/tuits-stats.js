@@ -1,10 +1,12 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {likesReducer} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 
 const TuitStats = (_id) => {
-  const tuit = useSelector(state => state).tuits.find((tuit) => tuit._id === _id)
+  //console.log(useSelector(state => state))
+  const tuit = useSelector(state => state).tuitsData.tuits.find((tuit) => tuit._id === _id)
   const dispatch = useDispatch();
   const likeTuit = () =>{dispatch(likesReducer(tuit));}
 
@@ -21,7 +23,7 @@ const TuitStats = (_id) => {
             </button>
         </div>
         <div className="col">
-            <button className="btn" onClick={likeTuit}>
+            <button className="btn" onClick={() => dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1}))}>
                 {tuit.liked ? <><i className="bi bi-heart-fill text-danger"></i>&#8195;{tuit.likes}</>
                             : <><i className="bi bi-heart"></i>&#8195;{tuit.likes}</>}
             </button>

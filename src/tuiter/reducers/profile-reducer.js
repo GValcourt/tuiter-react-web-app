@@ -1,5 +1,3 @@
-
-
 const initialState = {"firstName": "Jose", "lastName": "Annunziato", "handle": "@jannunzi",
 "profilePicture": "tesla.png", 	"bannerPicture": "js.png",
 "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.\nRetuits and likes are not endorsements.",
