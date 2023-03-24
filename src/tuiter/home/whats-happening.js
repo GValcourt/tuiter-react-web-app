@@ -1,5 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {createTuitThunk}
+  from "../../services/tuits-thunks";
+import {findTuitsThunk}
   from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 

@@ -37,7 +37,13 @@ const tuitsSlice = createSlice({
       (state, { payload }) => {
         state.loading = false
         state.tuits.push(payload)
+        //console.log(state.tuits)
  },
+   [createTuitThunk.pending]:
+      (state) => {
+        state.loading = true
+        state.tuits = []
+},
    [updateTuitThunk.fulfilled]:
  (state, { payload }) => {
    state.loading = false
