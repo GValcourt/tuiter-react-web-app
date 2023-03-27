@@ -1,6 +1,5 @@
 import {createSlice}
   from "@reduxjs/toolkit";
-import tuits from './tuits.json';
 import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk}
   from "../../services/tuits-thunks";
 
@@ -17,15 +16,18 @@ const tuitsSlice = createSlice({
       (state) => {
          state.loading = true
          state.tuits = []
+         //console.log("Payload pending")
    },
    [findTuitsThunk.fulfilled]:
       (state, { payload }) => {
          state.loading = false
          state.tuits = payload
+         //console.log("Payload has arrived")
    },
    [findTuitsThunk.rejected]:
       (state) => {
          state.loading = false
+         //console.log("Failure to launch")
    },
    [deleteTuitThunk.fulfilled] :
    (state, { payload }) => {
@@ -35,15 +37,17 @@ const tuitsSlice = createSlice({
  },
    [createTuitThunk.fulfilled]:
       (state, { payload }) => {
+        //console.log(`state: ${state}`)
+        //console.log(payload)
         state.loading = false
         state.tuits.push(payload)
+        //console.log("Payload sent")
         //console.log(state.tuits)
  },
    [createTuitThunk.pending]:
       (state) => {
         state.loading = true
-        state.tuits = []
-},
+ },
    [updateTuitThunk.fulfilled]:
  (state, { payload }) => {
    state.loading = false

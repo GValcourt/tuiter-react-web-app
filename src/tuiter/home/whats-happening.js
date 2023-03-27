@@ -1,7 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {createTuitThunk}
-  from "../../services/tuits-thunks";
-import {findTuitsThunk}
   from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
@@ -17,7 +15,7 @@ const WhatsHappening = () => {
  return (
    <div className="row">
      <div className="col-auto">
-       <img src="/images/nasa.jpg" width={60}/>
+       <img src="/images/nasa.jpg" width={60} alt=''/>
      </div>
      <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"

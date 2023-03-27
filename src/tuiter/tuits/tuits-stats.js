@@ -1,6 +1,5 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {likesReducer} from "./tuits-reducer";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 
@@ -12,6 +11,11 @@ const TuitStats = (_id) => {
     tuit.liked ? dispatch(updateTuitThunk({...tuit,likes: tuit.likes -1, liked: false})) : dispatch(updateTuitThunk({...tuit,likes: tuit.likes + 1, liked: true}));
   }
   const dislikeTuitHandler = () => {
+    //console.log(tuit.disliked)
+    if (tuit.disliked === undefined){
+        tuit.disliked = false
+        tuit.dislikes = 0
+    }
     tuit.disliked ? dispatch(updateTuitThunk({...tuit,dislikes: tuit.dislikes -1, disliked: false})):
                     dispatch(updateTuitThunk({...tuit,dislikes: tuit.dislikes + 1, disliked: true}));
   }
