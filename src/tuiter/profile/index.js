@@ -11,11 +11,11 @@ function ProfileComponent() {
   return(<>
     <h4>Profile</h4>
     <div className="row position-relative">
-      <img src={`/images/${profile.bannerPicture}`} height={300}/>
+      <img src={`/images/${profile.bannerPicture}`} height={300} alt=''/>
     </div>
     <div className="row align-items-center position-relative wd-position-up-60px">
       <div className="col-4  ps-4">
-        <img id={"profile_picture"} className="rounded-circle " width={140} height={140} src={`/images/${profile.profilePicture}`} />
+        <img id={"profile_picture"} className="rounded-circle " width={140} height={140} src={`/images/${profile.profilePicture}`} alt='' />
       </div>
       <div className="col-4">
       </div>

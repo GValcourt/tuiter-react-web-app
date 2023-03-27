@@ -42,11 +42,11 @@ function EditProfileComponent() {
         </div>
     </div>
     <div className="row">
-        <img src={`/images/${profile.bannerPicture}`} height={300}/>
+        <img src={`/images/${profile.bannerPicture}`} height={300} alt=''/>
     </div>
     <div className="row float-left">
         <div className="col-6  ps-4" >
-            <img id={"profile_picture"} className="rounded-circle" width={140} height={140} src={`/images/${profile.profilePicture}`} />
+            <img id={"profile_picture"} className="rounded-circle" width={140} height={140} src={`/images/${profile.profilePicture}`} alt=''/>
         </div>
 
     </div>
