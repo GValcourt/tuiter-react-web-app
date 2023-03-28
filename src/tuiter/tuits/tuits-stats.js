@@ -12,12 +12,12 @@ const TuitStats = (_id) => {
   }
   const dislikeTuitHandler = () => {
     //console.log(tuit.disliked)
-    /*if (tuit.disliked === undefined){
+    if (tuit.disliked === undefined){
         tuit.disliked = false
         tuit.dislikes = 0
     }
     tuit.disliked ? dispatch(updateTuitThunk({...tuit,dislikes: tuit.dislikes -1, disliked: false})):
-                    dispatch(updateTuitThunk({...tuit,dislikes: tuit.dislikes + 1, disliked: true}));*/
+                    dispatch(updateTuitThunk({...tuit,dislikes: tuit.dislikes + 1, disliked: true}));
   }
 
  return(
